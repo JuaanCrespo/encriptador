@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+    
+    
+}
+
+.cabecero {
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    color: #fff;
+    background: url(fondo.png), linear-gradient(to left, #1e177e, #2499dc)
+}
+.indicaciones{
+    color: lightgray;
+    font-size: small;
+    background-color: rgba(80, 81, 82, 0.479);
+    width: 310px;
+    padding: 5px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+.ban{
+    float: left;
+    display: table-cell;
+    padding-right: 3px;
+}
+
+.encriptador{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    
+}
+
+.encriptador_titulo{
+    padding-top: 0;
+    background-color: rgba(39, 22, 22, 0.575) ;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #222;
+}
+
+.encriptador_titulo h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
+.bloque{
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.escribir_mensaje,
+.mensaje_encriptado{
+    margin: 10px 20px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 10px 16px 6px rgba(0, 0, 0, 0.336) 
+
+}    
+
+.escribir_mensaje{
+    width: 100px;
+    background-color: #4090eb;
+    padding: 30px 30px;
+    width: 50vh;
+}
+
+.mensaje_encriptado{
+    width: 100px;
+    background-color: #4090eb;
+    padding: 30px 30px;
+    width: 50vh;
+}
+
+
+#mensaje{
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn{
+    size: 30px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #fff;
+    background-color: #0d36a7;
+    padding: 5px 5px 5px 5px;
+    border-radius: 6px;
+    
+    
+}
+
+.ion_icon{
+    color: #fff;
+    float: left;
+    display: table-cell;
+    padding-right: 3px;
+}
+
+footer{
+    width: 100%;
+    height: 25px;
+    background-color: rgba(39, 22, 22, 0.575) ;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.pie {
+    border-top: 1px solid #222;
+  }
+
+.post-footer{
+    margin: 0 auto;
+
+  }

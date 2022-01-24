@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <section class="cabecero">
+        <div class="encriptador">
+            <div class="encriptador_titulo">
+                <h1>Enciptador de mensajes</h1>
+            </div>
+            <div class="indicaciones">
+                <ion-icon name="ban-outline" class="ban"></ion-icon> Sin mayúsculas, tildes y caracteres especiales
+            </div>
+            <form id="forma" method="GET" action="">
+                <div class="bloque">
+                    <div class="escribir_mensaje">
+                        <div id="mensaje">Escribir mensaje</div>
+                        <br>
+                        <textarea name="texto1" id="texto1" cols="30" rows="3" onfocus="this.select()"
+                            onchange="this.value=this.value.toLowerCase();"></textarea>
+                        <br>
+                        <button type="button" class="btn" id="encriptar" onclick="encriptarMensaje()">
+                            <ion-icon id="ion_icon" name="lock-closed-outline"></ion-icon>Encriptar
+                        </button>
+                        <button type="button" class="btn" id="desencriptar" onclick="desencriptarMensaje()">
+                            <ion-icon id="ion_icon" name="lock-open-outline"></ion-icon>Desencriptar
+                        </button>
+                    </div>
+                    <div class="mensaje_encriptado">
+                        <div id="mensaje">Mensaje encriptado</div>
+                        <br>
+                        <textarea name="texto2" id="texto2" cols="30" rows="3" onfocus="this.select()"
+                            onchange="this.value=this.value.toLowerCase();"></textarea>
+                        <br>
+                        <button type="button" class="btn" id="copiar" onclick="copiarMensaje()">
+                            <ion-icon id="ion_icon" name="copy-outline"></ion-icon>Copiar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="app.js"></script>
+    
+    <footer class="pie">
+        <div class="post-footer">
+            by Juan Crespo | juancres1@gmail.com | alura challenge
+        </div>
+    </footer>
+</body>
+
+</html>
